@@ -1,0 +1,20 @@
+<h1 class="white text-center">A History Of Henry's</h1>
+<div class="container">
+    <section id="cd-timeline" class="cd-container" ng-controller="TimelineCtrl">
+
+        <div when-visible="timelineBlockIn"
+             when-not-visible="timelineBlockOut" class="cd-timeline-block" ng-repeat="item in timelineItems">
+
+            <div when-visible="timelineImgIn"
+                 when-not-visible="timelineImgOut" class="cd-timeline-img cd-picture">
+                <img src="{{item.image}}" alt="{{item.alt}}">
+            </div> <!-- cd-timeline-img -->
+
+            <div when-visible="timelineContentIn"
+                 when-not-visible="timelineContentOut" class="cd-timeline-content">
+                <p ng-repeat="t in item.text">{{t}}</p>
+                <span class="cd-date">{{item.date}}</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+    </section> <!-- cd-timeline -->
+</div>

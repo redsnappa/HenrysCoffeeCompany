@@ -1,0 +1,75 @@
+<img class="img-responsive img-full-width"  ng-src="images/contact/contact.jpg" alt="Contact Us">
+
+<h1 class="text-center white">Contact Us</h1>
+
+    <div class="container text-center">
+
+        <div class="henryContentContainer container">
+
+            <h3 class="no-top-margin text-center white">We love having fun with our friends, old and new, so like us, tweet us, email us or just send us a postcard!</h3>
+
+            <!-- Form -->
+            <div class="col-xs-12  col-md-6">
+                <h1 class="text-center">Email us with a message...</h1>
+                <div class="center_div">
+                    <!-- FORM -->
+                    <!-- pass in the variable if our form is valid or invalid -->
+                    <form  class="form-horizontal" ng-controller="ContactUsController" name="contactUsForm" ng-submit="submitForm()" novalidate> <!-- novalidate prevents HTML5 validation since we will be validating ourselves -->
+
+                        <div class="form-group col-sm-12" ng-class="{ 'has-error' : contactUsForm.name.$invalid && !contactUsForm.name.$pristine }">
+                            <p ng-show="(contactUsForm.name.$invalid) && !(contactUsForm.name.$pristine)" class="help-block">Enter your name.</p>
+                                <input type="text" name="name" class="form-control" id="name" ng-model="name" required placeholder="Name..." ng-required="true">
+                        </div>
+
+                        <div class="form-group col-sm-12" ng-class="{ 'has-error' : contactUsForm.email.$invalid && !contactUsForm.email.$pristine }">
+                            <p ng-show="(contactUsForm.email.$invalid) || !(contactUsForm.email.$pristine)" class="help-block">Enter a valid email.</p>
+                            <input type="email" name="email" class="form-control" id="email" ng-model="email" placeholder="Email..." ng-ng-required="true">
+
+                        </div>
+
+                        <div class="form-group col-sm-12" ng-class="{ 'has-error' : contactUsForm.message.$invalid && !contactUsForm.message.$pristine }">
+                            <p ng-show="contactUsForm.message.$error.minlength" class="help-block">Message is too short</p>
+                            <p ng-show="contactUsForm.message.$error.maxlength" class="help-block">Message is over 250 characters.</p>
+                            <textarea class="form-control" name ="message" rows="5" ng-model="message" placeholder="Message..." ng-minlength="3" ng-maxlength="250" ng-required="true"></textarea>
+                        </div>
+
+
+                        <div class="form-group col-sm-12">
+                                <button type="submit" ng-disabled="contactUsForm.$invalid || submitted" class="btn btn-default">Send <i ng-show="submitted" class="fa fa-spinner fa-spin"></i></button>
+                                <p ng-show="result" class="help-block">{{result}}</p>
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+
+
+
+            <div id="contactUsDetails" class="col-xs-12 col-md-6">
+
+                <h1 class="text-center">Get in touch via Social Media</h1>
+
+                <div class="contactUsDetails contactSpacer">
+                    <ul class='list-unstyled'>
+                        <li class="social-media">
+                            <a href='https://www.facebook.com/henryscoffeecompany/'><i class="fa fa-facebook-official contactUsGlyph contactUsSocialMediaGlyph"></i></a>
+                            <a href='https://twitter.com/greatcoffeehcc' target="_blank"><i class="fa fa-twitter contactUsGlyph contactUsSocialMediaGlyph"></i></a>
+                            <a href='https://www.linkedin.com/in/brian-mcgregor-80a0686' target="_blank"><i class="fa fa-linkedin-square contactUsGlyph contactUsSocialMediaGlyph"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+</div>
+
+
+
+
+
+

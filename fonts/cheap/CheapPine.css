@@ -1,0 +1,42 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3232308, 2016-06-13T15:30:33-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: CheapPine-Sans by HVD Fonts
+ * URL: http://www.myfonts.com/fonts/hvdfonts/cheap-pine/sans/
+ * 
+ * Webfont: CheapPine-Shadow by HVD Fonts
+ * URL: http://www.myfonts.com/fonts/hvdfonts/cheap-pine/shadow/
+ * 
+ * Webfont: CheapPine by HVD Fonts
+ * URL: http://www.myfonts.com/fonts/hvdfonts/cheap-pine/regular/
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3232308
+ * Licensed pageviews: 10,000
+ * Webfonts copyright: Copyright (c) 2009 by Hannes von Doehren. All rights reserved.
+ * 
+ * © 2016 MyFonts Inc
+*/
+
+
+
+  
+@font-face {font-family: 'CheapPine-Sans';src: url('webfonts/315234_0_0.eot');src: url('webfonts/315234_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/315234_0_0.woff2') format('woff2'),url('webfonts/315234_0_0.woff') format('woff'),url('webfonts/315234_0_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'CheapPine-Shadow';src: url('webfonts/315234_1_0.eot');src: url('webfonts/315234_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/315234_1_0.woff2') format('woff2'),url('webfonts/315234_1_0.woff') format('woff'),url('webfonts/315234_1_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'CheapPine';src: url('webfonts/315234_2_0.eot');src: url('webfonts/315234_2_0.eot?#iefix') format('embedded-opentype'),url('webfonts/315234_2_0.woff2') format('woff2'),url('webfonts/315234_2_0.woff') format('woff'),url('webfonts/315234_2_0.ttf') format('truetype');}
+
+
+.cheap-pine {
+    font-family: CheapPine-Sans;
+}

@@ -1,0 +1,718 @@
+
+body{
+
+    background-color: orange;
+
+    font-family: 'Maven Pro', sans-serif;
+}
+
+h1,h2,h3,p {
+    font-family: 'Maven Pro', sans-serif;
+
+
+}
+
+h1 {
+
+    font-size: 50px;
+    font-family: CheapPine-Sans;
+
+}
+
+h2 {
+
+    font-size: 20px;
+
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-style: normal;
+    font-family: mavenpro;
+}
+
+h4{
+    font-size: 14px;
+}
+
+p {
+    font-family: mavenpro;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+
+}
+
+.white {
+    color: whitesmoke;
+}
+
+.white-color {
+    color: white;
+}
+
+.white-background {
+ background-color: whitesmoke;
+}
+
+.orange-background {
+    background-color:  orange;
+}
+
+.cimbali-bg {
+    background-color: #E22113;
+}
+
+.lavazza-bg {
+    background-color: #004990;
+}
+
+.navbar{
+    background-color: whitesmoke;
+    margin: 0 0 0 0;
+
+}
+
+
+.no-padding {
+    padding: 0;
+}
+
+.row {
+
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.extra-white-top{
+    border-top: 4px solid white;
+
+}
+
+.extra-white-top-bottom{
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+
+}
+
+.white-border-top-bottom{
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+}
+
+.orange-border-top{
+    border-top: 3px solid orange;
+}
+
+.orange-border-bottom{
+    border-bottom: 3px solid orange;
+}
+
+.pad-bottom-out {
+    padding-bottom: 40px;
+}
+
+
+
+
+.marginAllRound {
+    margin: 10px 10px 10px 10px;
+}
+
+.paddingAllRound {
+    padding: 10px 10px 10px 10px;
+}
+
+
+.paddingAllRound {
+    padding: 10px 10px 10px 10px;
+}
+
+.dark-orange {
+    background-color: #FD5E00;
+}
+
+/*
+ * nav bar settings for the responsive menu selection on small screens
+ */
+.navbar-toggle {
+    border-color: #ddd;
+}
+
+
+.navbar-toggle .icon-bar {
+    background-color: #888;
+}
+
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+}
+
+/*
+ *  Menu items in the nav bar, drop downs etc
+ */
+
+.navbar-nav > li > a {
+    color: #4E4C4C;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+
+.nav > li > a:hover,
+.nav > li > a:active {
+    color: orange;
+
+    background-color: whitesmoke;
+}
+
+.nav > li > a:focus{
+    color: orange;
+    background-color: whitesmoke;
+}
+
+
+.nav > li > a {
+    color: #333333;
+    font-weight: 500;
+}
+
+.nav > li.active > a{
+    color: orange;
+}
+
+
+
+
+
+
+/*
+ *  Products sub menu
+ */
+
+.productNav > .navbar-nav > li > a {
+    color: #4E4C4C;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+
+.productNav > .nav > li > a:hover,
+.nav > li > a:active {
+    color: white;
+    background-color: orange;
+
+}
+
+.productNav > .nav > li > a:focus{
+    color: white;
+    background-color: orange;
+}
+
+
+.productNav > .nav > li > a {
+    color: #333333;
+    font-weight: 500;
+}
+
+.productNav > .nav > li.active > a{
+    color: white;
+}
+
+
+
+
+
+
+.henry-brand-img{
+    margin-top: 10px;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+.footer-brand{
+    margin-top: 20px;
+    display: inline;
+    font-size: 12px;
+    color: orange;
+    text-align: left;
+}
+
+.vertical-center {
+
+    display: flex;
+    align-items: center;
+}
+
+
+.vertical-middle {
+
+    vertical-align: middle;
+}
+
+
+.img-inline {
+
+    display: inline;
+}
+
+
+.helpsHeader {
+    background-color: #351a0f;
+}
+
+
+
+
+
+.product-box {
+    position: absolute;
+}
+
+.products-text {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+
+
+
+}
+
+.jumbotron {
+    background-color: orange;
+
+}
+
+.jumbotron2 {
+    background-color: rgb(241,444,41);
+    overflow: scroll;
+}
+
+.jumbotron h1 {
+    font-size: 30px;
+}
+
+.jumbotron p {
+    margin: auto 10px auto 10px;
+}
+
+/*
+ *Carousel
+ */
+
+.carousel-control {
+    background-image: none !important;
+}
+
+.carousel-caption {
+    position: absolute;
+    top:-40px
+}
+
+
+.img-center{
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+
+}
+
+.img-full-width {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+
+
+}
+
+.footer-link:active{
+    color:#FD5E00;
+}
+.footer-link:hover{
+    color:#FD5E00;
+}
+
+
+.navbar-inner{
+    text-align:center;
+}
+
+/**
+* centering the text on the menu
+*/
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .footer-brand {
+        text-align: center;
+    }
+
+    .contactSpacer {
+        margin-top: 5px;
+    }
+
+}
+
+/*
+ * Carousel
+ */
+
+.carousel-caption {
+    position: absolute;
+    top: 30%;
+    text-shadow: 0px 0px 10px #000000;
+    font-size: 2vw !important;
+}
+
+.carousel-caption > h1 {
+
+    text-shadow: 0px 0px 10px #000000;
+    font-size: 5vw !important;
+}
+
+
+.no-bottom-margin {
+    margin-bottom: 0px;
+}
+
+.padded{
+    padding: 2% 2% 2% 2%;
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+    .padded{
+        padding: 1% 2% 2% 2%;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+    .padded{
+        padding: 0% 2% 0% 2%;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+    .padded{
+        padding: 8% 2% 3% 2%;
+    }
+}
+
+
+
+.tea-padded{
+    padding: 2% 2% 2% 2%;
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+    .tea-padded{
+        padding: 1% 2% 2% 2%;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+    .tea-margin {
+        margin-top: 10px;
+    }
+    .tea-padded{
+        padding: 0% 2% 0% 2%;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+    .tea-padded{
+        padding: 5% 2% 3% 2%;
+    }
+}
+
+.retina {
+
+}
+
+.retinaOtherBrands {
+
+}
+
+.retinaFriends {
+
+}
+
+@media
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+    /* Retina-specific stuff here */
+    .retina {
+        width: 10%;
+    }
+
+    .retinaOtherBrands {
+        width: 20%;
+    }
+
+    .retinaFriends {
+        width: 14%;
+    }
+}
+
+/*
+ * Feature
+ */
+
+.feature{
+
+    background-color: orange;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.features .fa {
+    margin-top: 5px;
+    font-size: 32px;
+}
+
+.feature h2 {
+
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.feature > p {
+    font-weight: 300;
+}
+
+
+.contactUsFooter{
+    font-size: 28px;
+    margin-top: 40px;
+}
+
+
+
+.footer-link {
+    color: orange;
+}
+
+.inline {
+    display: inline !important;
+}
+
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+.henryContentContainer{
+
+    color: whitesmoke;
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+}
+
+.henryContentContainer p {
+    font-size: 18px;
+}
+
+
+.contactUsDetails{
+    font-size: 16px;
+}
+
+
+
+.no-top-margin {
+
+    margin-top: 0px;
+
+}
+
+
+.contactSpacer{
+    margin-top: 60px;
+}
+
+.line-bottom-border {
+
+    border-bottom-style: solid ;
+    border-bottom-color: whitesmoke;
+    border-bottom-width: 2px;
+
+}
+
+.social-media{
+    margin-right: 3px;
+
+}
+
+.fa-white{
+    color: whitesmoke;
+}
+
+.fa-youtube-square{
+    color: #e52d27;
+}
+
+.fa-youtube-square:hover{
+    color: #b31217;
+}
+
+.contactUsGlyph{
+    color: whitesmoke;
+}
+
+.center_div{
+    margin: 0 auto;
+    width:80% /* value of your choice which suits your alignment */
+}
+
+.marginTopBottom{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+
+.smMarginTopBottom{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+.padding-lft-rt {
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-bottom: 3%;
+}
+
+em {
+    font-family: moon_flower_boldregular;
+    letter-spacing: 2px;
+    font-size: larger;
+}
+
+.our-story-list {
+    font-size: 18px;
+}
+
+.our_story_image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.contactUsSocialMediaGlyph {
+    font-size: 50px;
+}
+
+
+
+#products {
+    color: white;
+}
+
+
+.navbar{
+    border: 0px solid transparent;
+}
+
+
+.productNav {
+    background-color: orange;
+}
+
+.productIsSmall{
+
+    transition: height 0.5s ease-out;
+
+}
+
+.productIsBig{
+    transition: height 0.5s ease-out;
+
+}
+
+.media-body{
+    font-weight: 400;
+}
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 150px;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 150px;
+    background-color: #f5f5f5;
+}
+
+/* The starting CSS styles for the enter animation */
+.hfade.ng-enter {
+    transition:all 0.5s ;
+    opacity:0;
+}
+
+/* The finishing CSS styles for the enter animation */
+.hfade.ng-enter.ng-enter-active {
+    opacity:1;
+    transition:all 0.5s linear;
+}
+
+.hfade.ng-leave {
+    transition:all 0.5s linear ;
+    opacity:1;
+}
+.hfade.ng-leave.ng-leave-active {
+    opacity:0;
+    transition:all 0.5s linear ;
+}
+

@@ -1,0 +1,46 @@
+
+<!-- carousel -->
+<div id="carousel" style="height: 30%" ng-controller="HeroCarouselCtrl">
+    <uib-carousel interval="myInterval" no-wrap="noWrapSlides">
+        <uib-slide ng-repeat="slide in slides" active="slide.active">
+            <img class="img-full-width" ng-src="{{slide.image}}">
+            <div class="carousel-caption">
+                <h1>{{slide.title}}</h1>
+                <h2>{{slide.text}}</h2>
+            </div>
+        </uib-slide>
+    </uib-carousel>
+</div>
+
+
+<!-- Additional Info -->
+<div class='text-center marginTopBottom'>
+    <div id="features" class="container features">
+        <div class="row">
+            <div class='col-sm-4  feature'>
+                <i class="fa fa-coffee"></i>
+                <h2 class="fa-header-padding">Increase your product range...</h2>
+                <p>Henry's sells carefully selected, exclusively blended coffees plus many other products to busy, independent coffee places.</p>
+            </div>
+
+            <div class='col-sm-4   feature'>
+                <i class="fa fa-line-chart"></i>
+                <h2>Increase Your Market Insight!</h2>
+                <p>We can give you insight into your competitors and develop strategies, bespoke promotional mechanics, and branding POS to win in the market!<br></p>
+            </div>
+
+            <div class='col-sm-4  feature'>
+                <i class="fa fa-heart-o"></i>
+                <h2>Great Ethics, Great Customer Service</h2>
+                <p>Henry's provides a community and customer driven approach to coffee ethics, and is driven to excel in customer service.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script type="text/javascript">
+    //Set the heights of the features to all be the same
+    $(document).ready(setHeightOfFeatures);
+
+</script>

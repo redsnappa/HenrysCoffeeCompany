@@ -1,0 +1,33 @@
+<header class='navbar navbar-static-top'>
+
+    <div class="center-block">
+        <a ui-sref="home" class='henry-brand-img'><img class="henry-brand-img retina" ng-src="images/HCClogo.png"></a>
+    </div>
+
+    <nav class='container' role='navigation'>
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                <li ng-repeat="menuItem in menuItems"   ng-class="{dropdown : (menuItem.children.length != 0)}" ui-sref-active="active">
+                    <!-- if there are no children just show the text -->
+                    <a ng-if="menuItem.children.length === 0"  ui-sref="{{menuItem.link}}" >{{menuItem.text}}</a>
+                    <!-- if there are children just create a dropdown (note the ng-class above for dropdown -->
+                    <a ng-if="menuItem.children.length != 0" href='/about' data-target='#' class='dropdown-toggle' data-toggle='dropdown'>{{menuItem.text}} <span class='caret'></span></a>
+                    <ul ng-if="menuItem.children.length != 0" class='dropdown-menu' role='menu'>
+                        <li ng-repeat="child in menuItem.children"><a ui-sref='{{child.link}}'>{{child.text}}</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </nav>
+</header>
