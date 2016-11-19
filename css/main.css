@@ -476,7 +476,7 @@ p {
 (min-resolution: 192dpi) {
     /* Retina-specific stuff here */
     .retina {
-        width: 40%;
+        width: 9%;
     }
 
     .retinaOtherBrands {
@@ -484,7 +484,7 @@ p {
     }
 
     .retinaFriends {
-        width: 100%;
+        width: 70%;
     }
 }
 
