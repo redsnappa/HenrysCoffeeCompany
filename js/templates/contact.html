@@ -16,26 +16,26 @@
                     <!-- pass in the variable if our form is valid or invalid -->
                     <form  class="form-horizontal" ng-controller="ContactUsController" name="contactUsForm" ng-submit="submitForm()" novalidate> <!-- novalidate prevents HTML5 validation since we will be validating ourselves -->
 
-                        <div class="form-group col-sm-12" ng-class="{ 'has-error' : contactUsForm.name.$invalid && !contactUsForm.name.$pristine }">
-                            <p ng-show="(contactUsForm.name.$invalid) && !(contactUsForm.name.$pristine)" class="help-block">Enter your name.</p>
+                        <div class="form-group col-sm-12" ng-class="{ 'has-error' : contactUsForm.name.$invalid && !contactUsForm.name.$pristine && !submitted }">
+                            <p ng-show="(contactUsForm.name.$invalid) && !(contactUsForm.name.$pristine) && !submitted" class="help-block">Enter your name.</p>
                                 <input type="text" name="name" class="form-control" id="name" ng-model="name" required placeholder="Name..." ng-required="true">
                         </div>
 
-                        <div class="form-group col-sm-12" ng-class="{ 'has-error' : contactUsForm.email.$invalid && !contactUsForm.email.$pristine }">
-                            <p ng-show="(contactUsForm.email.$invalid) && !(contactUsForm.email.$pristine)" class="help-block">Enter a valid email.</p>
-                            <input type="email" name="email" class="form-control" id="email" ng-model="email" placeholder="Email..." ng-ng-required="true">
+                        <div class="form-group col-sm-12" ng-class="{ 'has-error' : contactUsForm.email.$invalid && !contactUsForm.email.$pristine && !submitted }">
+                            <p ng-show="(contactUsForm.email.$invalid) && !(contactUsForm.email.$pristine) && !submitted" class="help-block">Enter a valid email.</p>
+                            <input type="email" name="email" class="form-control" id="email" ng-model="email" placeholder="Email..." ng-required="true">
 
                         </div>
 
-                        <div class="form-group col-sm-12" ng-class="{ 'has-error' : contactUsForm.message.$invalid && !contactUsForm.message.$pristine }">
-                            <p ng-show="contactUsForm.message.$error.minlength" class="help-block">Message is too short</p>
-                            <p ng-show="contactUsForm.message.$error.maxlength" class="help-block">Message is over 250 characters.</p>
+                        <div class="form-group col-sm-12" ng-class="{ 'has-error' : contactUsForm.message.$invalid && !contactUsForm.message.$pristine && !submitted }">
+                            <p ng-show="contactUsForm.message.$error.minlength && !submitted" class="help-block">Message is too short</p>
+                            <p ng-show="contactUsForm.message.$error.maxlength && !submitted" class="help-block">Message is over 250 characters.</p>
                             <textarea class="form-control" name ="message" rows="5" ng-model="message" placeholder="Message..." ng-minlength="3" ng-maxlength="250" ng-required="true"></textarea>
                         </div>
 
 
                         <div class="form-group col-sm-12">
-                                <button type="submit" ng-disabled="contactUsForm.$invalid || submitted" class="btn btn-default">Send <i ng-show="submitted" class="fa fa-spinner fa-spin"></i></button>
+                                <button type="submit" ng-disabled="contactUsForm.$invalid || submitted" class="btn btn-default">Send <i ng-show="sending" class="fa fa-spinner fa-spin"></i></button>
                                 <p ng-show="result" class="help-block">{{result}}</p>
                         </div>
 
