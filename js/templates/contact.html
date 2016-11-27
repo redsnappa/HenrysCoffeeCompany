@@ -22,7 +22,7 @@
                         </div>
 
                         <div class="form-group col-sm-12" ng-class="{ 'has-error' : contactUsForm.email.$invalid && !contactUsForm.email.$pristine }">
-                            <p ng-show="(contactUsForm.email.$invalid) || !(contactUsForm.email.$pristine)" class="help-block">Enter a valid email.</p>
+                            <p ng-show="(contactUsForm.email.$invalid) && !(contactUsForm.email.$pristine)" class="help-block">Enter a valid email.</p>
                             <input type="email" name="email" class="form-control" id="email" ng-model="email" placeholder="Email..." ng-ng-required="true">
 
                         </div>
